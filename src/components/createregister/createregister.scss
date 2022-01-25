@@ -1,0 +1,93 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .display-block {
+    display: block;
+  }
+  
+  .display-none {
+    display: none;
+  }
+  .campo{
+    display: flex;
+    width: 100%;
+    padding: 10px 10px;
+    justify-content: space-between;
+  }
+
+  .createContent {
+    position:fixed;    
+    height: auto;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 520px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    border-radius: 20px;
+    padding: 30px 30px 70px;
+    button.close {
+      width: 30px;
+      font-size: 20px;
+      color: #c0c5cb;
+      align-self: flex-end;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+    form{
+        width: 70%;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    p {
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+    .btnarea{
+        display: flex;  
+        position: absolute;
+        margin-top: 50px;
+        bottom: 10px;
+    }
+    .btn{
+        margin: 20px 10px;
+        padding: 10px 20px;
+        color: #FFF;                
+        text-align: center;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    .ok{
+        background-color: green;
+    }
+    .cancel{
+        background-color: red;
+    }
+  }
+  
+
+  .createOption{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+
+    h4{
+        margin: 10px 10px;
+    }
+  }

@@ -1,0 +1,30 @@
+$ItemHoverColor:#737373;
+$ItemSelectedColor:#adadad;
+
+.sidebar{
+    width: 170px;
+    border: solid 2px;
+    border-radius: 5px;
+    height: fit-content;
+    padding: 30px 15px;
+    border-color: $ItemSelectedColor;
+    >a{
+        text-decoration: none;
+    }
+}
+.menuitem{
+    border-bottom: solid 2px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border-color: $ItemSelectedColor;
+    padding: 5px;
+    color: black;
+}
+
+.menuitem:hover{
+    background-color: $ItemHoverColor;
+}
+
+.selected{
+    background-color: $ItemSelectedColor;
+}

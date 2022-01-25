@@ -1,0 +1,17 @@
+.loginbox{
+    display: flex;
+    justify-content: center;
+    align-content: center;    
+    padding-top: 100px;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    margin: 20px 0px;
+    cursor: pointer;
+  }

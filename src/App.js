@@ -1,25 +1,28 @@
 import logo from './logo.svg';
-import './App.css';
+import './globalstyles/global.scss';
+import React, { useState, useEffect, Component } from "react";
+// import { useNavigate } from "react-router-dom";
+import {authenticationService} from './services/autentication/autentication';
+import Login from './pages/login/login';
+import WorkDesk from "./layouts/workdesk";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App({ pageProps }) {
+
+  const [state, setState] = useState({
+    authed: false,
+  });
+
+  // const navigate = useNavigate();
+
+  if (sessionStorage.getItem('user-token') != undefined) {
+    return (
+      <WorkDesk>
+        <Component {...pageProps} />
+      </WorkDesk>
+    )
+  }else{
+    return(
+      <Login />
+    )
+  }
 }
-
-export default App;

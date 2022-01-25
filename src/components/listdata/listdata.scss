@@ -1,0 +1,20 @@
+$ItemSelectedColor:#adadad;
+$ItemHoverColor:#737373;
+$WhiteTextColor:#FFF;
+
+.ListTable{
+    width: 100%;
+    border-collapse: collapse;    
+    > thead > tr{
+        border-bottom: solid 1px;
+    }
+}
+th, td {
+    border: 1px solid $ItemHoverColor;    
+    padding: 8px;
+  }
+
+  th {    
+    background-color: #adadad;
+    color: $WhiteTextColor;
+  }
